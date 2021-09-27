@@ -22,3 +22,11 @@ setInterval(() => {
 
 
 }, sleapTime);
+
+
+$('.mobile-menu-btn').click(function () { 
+    $(this).toggleClass('active');
+    $('.logo').toggleClass('active');
+    $('.mobile-menu').toggleClass('active');
+
+});
