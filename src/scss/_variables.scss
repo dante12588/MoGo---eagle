@@ -1,0 +1,31 @@
+:root{
+    --color-white: #FFFFFF;
+    --color-teal: #95E1D3;
+    --color-carrot: #F38181;
+    --color-dark: #333333;
+    --color-grey: #999999;
+    --color-light-grey: #C2C1C4;
+    --color-yellow: #FCE38A;
+
+}
+
+$desktop-width: 1200px;
+
+
+.wrapper-content{
+    max-width: var($desktop-width);
+}
+
+.wrapper-full-w{
+    width: 100vw;
+}
+
+.space-100{
+    margin-top: 100px;
+}
+.space-200{
+    margin-top: 200px;
+}
+.space-300{
+    margin-top: 300px;
+}
