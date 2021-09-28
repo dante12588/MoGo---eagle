@@ -13,13 +13,20 @@ $desktop-width: 1200px;
 
 
 .wrapper-content{
-    max-width: var($desktop-width);
+    max-width: 1200px;
+    margin: auto;
 }
 
 .wrapper-full-w{
     width: 100vw;
 }
 
+.space-85{
+    margin-top: 85px;
+}
+.space-10{
+    margin-top: 10px;
+}
 .space-100{
     margin-top: 100px;
 }
@@ -28,4 +35,55 @@ $desktop-width: 1200px;
 }
 .space-300{
     margin-top: 300px;
+}
+
+@media (max-width: 900px){
+    .space-85{
+        margin-top: 40px;
+    }
+    .space-10{
+        margin-top: 5px;
+    }
+    .space-100{
+        margin-top: 50px;
+    }
+    .space-200{
+        margin-top: 100px;
+    }
+    .space-300{
+        margin-top: 150px;
+    }
+}
+
+.t-c{
+    text-align: center;
+}
+
+.title-h3{
+    font-size: 2.4em;
+    color: var(var(--color-dark));
+    text-align: center;
+}
+.title-h2{
+    font-size: 3em;
+    color: var(var(--color-dark));
+
+}
+
+.text-default{
+    font-size: 1.5em;
+    color: var(--color-grey);
+    margin: 0 20px;
+}
+
+.line-carrot{
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-carrot);
+    margin: 35px auto;
+}
+
+.max-w-900{
+    max-width: 900px;
+    margin: auto;
 }
