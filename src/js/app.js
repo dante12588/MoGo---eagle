@@ -1,3 +1,7 @@
+//--------------------------------------------------//
+//----------- Obsługa menu i slidera  -------------//
+//-------------------------------------------------//
+
 const slider = $('.slider');
 const sleapTime = 5000;
 const animTime = 1000;
@@ -30,3 +34,46 @@ $('.mobile-menu-btn').click(function () {
     $('.mobile-menu').toggleClass('active');
 
 });
+
+
+
+//-----------------------------------//
+//----------- Licznik  -------------//
+//----------------------------------//
+
+
+function counter(start, end, obj, time){
+    let timeI = time / end;
+    let fun = setInterval(() => {
+        obj.innerHTML = `${start}`;
+        if(start < end){
+            start++;
+        }else{
+            clearInterval(fun);
+        }
+    },  timeI );
+
+}
+
+const posXcounter =  $('.counter').offset().top;
+const elementsCount = document.querySelectorAll('.counter');
+
+// let destnumber = parseInt( elementsCount[0].getAttribute('final-val') );
+// console.log( parseInt( elementsCount[0].getAttribute('time-anim') ) );
+
+
+let disable = false;
+
+    $(window).scroll(function(e){
+        let posScroll = this.scrollY;
+        let height = this.visualViewport.height * 0.8;
+    
+        if ( scrollY + height > posXcounter && !disable ) {
+            disable = true;
+            elementsCount.forEach( (element)=>{
+               let end = parseInt( element.getAttribute('final-val') );
+               let time = parseInt( element.getAttribute('time-anim') );  // 1s -> 1000ms
+               counter(0, end, element, time)
+            });
+        }
+    })
