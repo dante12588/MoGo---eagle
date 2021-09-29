@@ -1,0 +1,54 @@
+.owl-carousel{
+    width: 1200px !important;
+    margin: auto !important;
+    padding-top: 70px;
+}
+
+.carusel-wrapper{
+    background-color: var(--color-grey-very-light);
+    height: 290px;
+}
+
+.carusel{
+
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__img{
+        width: 60px !important;
+        border: 3px solid var(--color-teal);
+        padding: 43px;
+        margin-right: 60px;
+    }
+
+    &__comment{
+        width: 770px !important;
+        
+        & p{
+            color: var(--color-grey);
+            font-size: 2.4em;
+        }
+
+        & h5{
+            color: var(--color-dark);
+            font-size: 2.4em;
+            font-weight: 700;
+            margin-top: 10px;
+            position: relative;
+            padding-left: 50px;
+
+            &::after{
+                position: absolute;
+                content: '';
+                background-color: var(--color-carrot);
+                width: 40px;
+                height: 3px;
+                left: 0;
+                top: 40%;
+            }
+        }
+    }
+}
