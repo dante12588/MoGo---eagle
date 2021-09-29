@@ -4,6 +4,6 @@
 
 <p>Pobierz repo</p>
 <code>git clone https://github.com/dante12588/MoGo---eagle/tree/master</code>
-
-<p>browSync + compile scss, komend:</p>
+<p></p>
+<p>browSync + kompilacja scss, komenda:</p>
 <code>gulp</code>
