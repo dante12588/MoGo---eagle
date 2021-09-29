@@ -35,11 +35,13 @@
     font-size: 3em;
     font-weight: bold;
     color: var(--color-white);
+    transition: .3s color linear
 
 }
 
 .menu-items{
     display: flex;
+    align-items: center;
 
     & a{
         color: var(--color-white);
@@ -48,6 +50,10 @@
         margin-left: 60px;
         position: relative;
         transition: .15s color linear;
+
+        & img{
+            max-height: 17px;
+        }
 
         &::after{
             content: '';
@@ -293,6 +299,20 @@
 
 .mobile-menu-btn.active svg path{
     fill: var(--color-dark)
+
+    
+}
+
+.mobile-menu-btn svg path{
+    transition: .3s fill linear, .3s transform linear;
+}
+
+.mobile-menu-btn.active svg path:nth-child(1){
+    transform: translateY(38%);
+}
+
+.mobile-menu-btn.active svg path:nth-child(3){
+    transform: translateY(-38%);
 }
 
 .logo.active a{
@@ -300,8 +320,7 @@
 }
 
 .mobile-menu{
-    position: absolute;
-    overflow: hidden;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--color-yellow);
@@ -345,3 +364,4 @@
         color: var(--color-dark);
     }
 }
+
