@@ -77,3 +77,23 @@ let disable = false;
             });
         }
     })
+
+//-----------------------------------//
+//----------- Accordion  -------------//
+//----------------------------------//
+
+
+$('.accordion__item').click( function(){
+    let heightHederA = $('.accordion__header').innerHeight() + 25;
+    let heightImgA = $('.accordion__img').innerHeight();
+    let availableHeight = heightImgA - heightHederA * 3;
+
+    $(this).children().toggleClass('active');
+    $(this).children().toggleClass('disable');
+    $(this).children('.accordion__description.active').css('height', availableHeight);
+    $(this).children('.accordion__description.disable').css('height', 0);
+})
+
+//-----------------------------------//
+//----------- Carusel   -------------//
+//----------------------------------//
