@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/owl.carousel.css">
+    <link rel="stylesheet" href="lib/css/owl.theme.default.css">
 
     <title>MoGo</title>
 </head>
@@ -291,18 +293,19 @@
 
     <section class="carusel-wrapper space-85">
 
-        <div class="carusel">
-            <p>jakiś tekst nr 1</p>
-        </div>
-        <div class="carusel">
-            <p>jakiś tekst nr 2</p>
-        </div>
-        <div class="carusel">
-            <p>jakiś tekst nr 3</p>
-        </div>
-        <div class="carusel">
-            <p>jakiś tekst nr 4</p>
-        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="carusel__item" class="carusel__item">
+                    <img class="carusel__img" src="svg/speach.svg" alt="">
+                    <div class="carusel__comment">
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                        <h5>Jon Doe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
 
     </section>
 
@@ -329,7 +332,9 @@
 
 <!-- libs -->
 <script src="lib/jquery.js"></script>
+<script src="lib/owl.carousel.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/carusel.js"></script>
 
 </body>
 </html>
