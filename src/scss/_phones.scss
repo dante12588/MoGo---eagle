@@ -1,9 +1,11 @@
 .phones{
     width: 100%;
+    background-repeat: no-repeat;
     height: 850px;
     background-image: url('../img/phone-bg.jpg');
     background-attachment: fixed;
     position: relative;
+    background-size: cover;
 
     & .phone{
         position: absolute;
