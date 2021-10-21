@@ -2,6 +2,22 @@
     width: 1200px !important;
     margin: auto !important;
     padding-top: 70px;
+
+    & .owl-prev span,.owl-next span{
+        font-size: 5em;
+        color: var(--color-grey);
+        position: absolute;
+        top: 40%;
+    }
+
+    & .owl-prev span{
+        left: 0;
+
+    }
+
+    & .owl-next span{
+        right: 0;
+    }
 }
 
 .carusel-wrapper{
@@ -50,5 +66,40 @@
                 top: 40%;
             }
         }
+    }
+}
+
+@media (max-width: 1200px){
+
+    .owl-carousel{
+        width: 900px !important;
+    }
+}
+
+@media (max-width: 900px){
+
+    .owl-carousel{
+        width: 90% !important;
+
+        & .owl-prev span,.owl-next span{
+            top: 60%;
+        }
+    }
+
+    .carusel{
+
+        &__img{
+            width: 40px !important;  
+            padding: 20px;
+            margin-right: 40px;  
+        }
+
+        &__comment{
+
+            & p, h5{
+                font-size: 1.5em;
+            }
+        }
+
     }
 }
