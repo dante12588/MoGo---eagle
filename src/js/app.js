@@ -3,7 +3,7 @@
 //-------------------------------------------------//
 
 const slider = $('.slider');
-const sleapTime = 5000;
+const sleapTime = 10000;
 const animTime = 1000;
 const numOfSlides = slider.children().length;
 let count = 1;
@@ -94,6 +94,4 @@ $('.accordion__item').click( function(){
     $(this).children('.accordion__description.disable').css('height', 0);
 })
 
-//-----------------------------------//
-//----------- Carusel   -------------//
-//----------------------------------//
+
